@@ -47,6 +47,7 @@ p {
 .main-content {
   display: flex;
   flex-direction: column;
+  padding: 0 2em;
 }
 
 /* =================
@@ -55,7 +56,8 @@ p {
 
 .intro {
   color: #fff;
-  background-color: #9480e4;
+  background: #9480e4 url('./images/intro-bg.png');
+  background-size: cover;
   min-height: 250px;
   text-align: center;
   justify-content: center;
@@ -67,7 +69,7 @@ p {
 
 .main-content {
   align-items: center;
-  padding: 2.5em 2em;
+  padding-top: 2.5em;
 }
 
 .img-main {
@@ -82,3 +84,35 @@ p {
 /* =================
   Media queries 
  ================= */
+
+@media (min-width: 576px) {
+  body {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+  .beta-text {
+    font-size: 1.25rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+
+  .intro {
+    min-height: 100vh;
+  }
+
+  .main-content {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
