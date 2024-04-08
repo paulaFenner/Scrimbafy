@@ -1,3 +1,9 @@
+*,
+a::before,
+a::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -92,6 +98,11 @@ p {
 .img-main {
   width: 120px;
   border-radius: 50%;
+}
+
+.main-content p,
+form {
+  max-width: 450px;
 }
 
 /* =================
